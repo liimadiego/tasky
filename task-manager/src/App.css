@@ -1,0 +1,7 @@
+div:where(.swal2-container) div:where(.swal2-popup) {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 !important;
+}
