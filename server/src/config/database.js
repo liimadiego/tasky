@@ -1,4 +1,9 @@
 import mysql from 'mysql2';
+import dotenv from 'dotenv-safe';
+
+dotenv.config({
+    allowEmptyValues: true
+});
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST || 'localhost',

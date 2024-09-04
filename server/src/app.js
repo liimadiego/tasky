@@ -4,6 +4,11 @@ import routes from './routes/routes.js';
 import authenticationRoutes from './routes/authentication.routes.js';
 import taskRoutes from './routes/task.routes.js';
 import cors from 'cors';
+import dotenv from 'dotenv-safe';
+
+dotenv.config({
+    allowEmptyValues: true
+});
 
 app.use(cors({
     origin: process.env.FRONT_APPLICATION_URL,
