@@ -35,7 +35,7 @@ function ResponsiveAppBar() {
 
     const Logout = () => {
         localStorage.removeItem('token');
-        window.location.href = `${process.env.REACT_APP_API_BASE_URL}`;
+        window.location.href = `${process.env.REACT_APP_APP_URL}`;
     };
 
     return (
