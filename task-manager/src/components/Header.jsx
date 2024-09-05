@@ -13,7 +13,6 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,7 +35,7 @@ function ResponsiveAppBar() {
 
     const Logout = () => {
         localStorage.removeItem('token');
-        window.location.reload();
+        window.location.href = `${process.env.REACT_APP_API_BASE_URL}`;
     };
 
     return (
