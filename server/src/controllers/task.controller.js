@@ -5,7 +5,6 @@ const getAllTasks = async (req, res) => {
         const tasks = await taskRepository.getAllTasks();
         res.json(tasks);
     } catch (err) {
-        console.error('Error fetching tasks:', err);
         res.status(500).json({ message: 'Erro ao obter tarefas', error: err });
     }
 };
